@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        body {
+            background-color: #F9FAFB;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        table {
+            border-radius: 20px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .progress-bar .progress-container {
+            width: 100%;
+            height: 10px;
+            background-color: azure;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar .progress-filling {
+            height: 10px;
+            background-color: #10B981;
+            border-radius: 10px;
+            width: 0;
+            /* start at 0 for animation */
+            animation: fillBar 2s forwards;
+            /* apply animation */
+            animation-delay: 0.3s;
+            /* optional delay for smoother start */
+        }
+
+        /* keyframes using CSS variable */
+        @keyframes fillBar {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: var(--target-width);
+            }
+        }
+
+        .typewriter {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0ch;
+            /* start from 0 characters */
+            border-right: 2px solid #10B981;
+            /* blinking cursor */
+            animation: typing 5s steps(32) forwards, blink 0.6s step-end infinite;
+        }
+
+        /* Typing animation */
+        @keyframes typing {
+            from {
+                width: 0ch;
+            }
+
+            to {
+                width: 30ch;
+            }
+
+            /* match or exceed text length */
+        }
+
+        /* Blinking cursor */
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="section 1 " style="background-color: Azure; color: rgb(65, 62, 62) ;text-align:center;">
+        <center>
+
+
+            <table style="width:100%; text-align:center; background-color: #10B981;">
+                <tr>
+                    <td><img src="images/logo.png" width="250px" height="150" style="float: left; alt: logo;"></td>
+                    <td style="padding:10px;"><a href="home.html">Home</a></td>
+                    <td style="padding:10px;"><a href="about.html">About</a></td>
+                    <td style="padding:10px;"><a href="Skills.html"> Skills</a></td>
+                    <td style="padding:10px;"><a href="Projects.html">Projects</a></td>
+                    <td style="padding:10px;"><a href="contact.html">contact</a></td>
+
+                </tr>
+            </table>
+
+        </center>
+
+
+        <table>
+            <tr>
+
+                <td>
+                    <h1 class="typewriter"
+                        style="font-size: 32px; color: #2c3e50; font-weight: 400;padding-left: 20px;">
+                        Hi, I'm MOHAMMED SHABUDDIN</h1>
+                    <p
+                        style="font-family:'Times New Roman', Times, serif; font-size: 18px; color: #524c4a;padding-left: 20px;">
+                        Aspiring Java Full Stack Developer | Passionate About Web Technologies
+                    </p>
+                </td>
+                <td>
+                    <span style="padding: 0 10px 0 100px;"><img src="images/image.png" height="400px"
+                            width="400px"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+    <div id="section 2">
+        <table style="width:100%;background-color:#6EE7B7;color: #111827;">
+            <tr>
+                <td>
+                    <img src="images/me.png" height="500px" width="350px"
+                        style="border-radius: 10px;padding-left: 5px;padding-top: 5px;">
+                </td>
+                <td style="padding-left: 10px;">
+                    <h1 style="font-family: 'Segoe UI', sans-serif;font-weight: 500;">About me</h1><br>
+                    <span style="font-family: 'Segoe UI', sans-serif; font-size:18px;">I'm a passionate Java Full Stack
+                        Developer learning to build web apps using HTML, CSS, Java, and Spring Boot. I love creating
+                        clean,
+                        responsive designs and learning new technologies.</span>
+                    <h2 style="font-family: 'Segoe UI', sans-serif;font-weight: 500;">Skills</h2><br>
+
+                    <table
+                        style="width:100%;background-color:#6EE7B7;color: #111827;font-family: sans-serif;border-spacing: 10px 8px;">
+                        <tr>
+                            <td style="width: 30%;">HTML</td>
+                            <td style="width: 70%;">
+                                <div class="progress-bar">
+                                    <div class="progress-container">
+                                        <div class="progress-filling" style="--target-width: 70%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 30%;">CSS</td>
+                            <td style="width: 70%;">
+                                <div class="progress-bar">
+                                    <div class="progress-container">
+                                        <div class="progress-filling" style="--target-width:30%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 30%;">JAVA</td>
+                            <td style="width: 70%;">
+                                <div class="progress-bar">
+                                    <div class="progress-container">
+                                        <div class="progress-filling" style="--target-width:60%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 30%;">PYTHON</td>
+                            <td style="width: 70%;">
+                                <div class="progress-bar">
+                                    <div class="progress-container">
+                                        <div class="progress-filling" style="--target-width:80%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="section 3">
+        <table style="border-radius: 10px; border-spacing: 20px;width: 100%;">
+            <tr>
+                <td style="width: 50%; background-color: rgb(176, 220, 238);border-radius: 10px; padding: 20px; ">
+                    <h1 style="font-family: sans-serif;color: #10B981;">Project 1</h1>
+                    <span
+                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;color:#111827">
+                        Name:<br>
+                        Detecting Money Laundering using ML and Statistics<br>
+                        Description:
+                        <ul>
+                            <li>
+                                Implemented a interactive webpage using html css and javascript for user interaction
+                            </li>
+                            <li>
+                                Implemented by python machine learning and statistical techniques to detect
+                                suspicious
+                                activities in banking transactions
+                            </li>
+                        </ul>
+                    </span>
+                </td>
+                <td style="width:50%; background-color:  #10B981; border-radius: 10px;padding: 20px;">
+
+                    <h1 style="font-family: sans-serif;color:azure;">Project 2</h1>
+                    <span
+                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;color:#111827">
+                        Name:<br>
+                        Detection of Chronic heart failure from heart Sounds<br>
+                        Description:
+                        <ul>
+                            <li>
+                                Developed using ML/DL models to detect chronic heart failure from heart sounds.
+                            </li>
+                            <li>
+                                Built a Python-based GUI with Tkinter for user interaction.
+                            </li>
+                            <li>
+                                Integrated Random Forest and binary classifier models.
+                            </li>
+                        </ul>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="section 4">
+        <table style="border-radius: 10px; border-spacing: 20px;width: 100%;">
+            <tr>
+                <td style="width: 50%; background-color: rgb(176, 220, 238);border-radius: 10px; padding: 20px; ">
+                    <h1 style="font-family: sans-serif;color: #10B981;">Project 1</h1>
+                    <span
+                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;color:#111827">
+                        contact me <br>
+                        Detecting Money Laundering using ML and Statistics<br>
+                        Description:
+                        <ul>
+                            <li>
+                                Implemented a interactive webpage using html css and javascript for user interaction
+                            </li>
+                            <li>
+                                Implemented by python machine learning and statistical techniques to detect
+                                suspicious
+                                activities in banking transactions
+                            </li>
+                        </ul>
+                    </span>
+                </td>
+                <td style="width:50%; background-color:  #10B981; border-radius: 10px;padding: 20px;">
+
+                    <h1 style="font-family: sans-serif;color:azure;">Project 2</h1>
+                    <span
+                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;color:#111827">
+                        Name:<br>
+                        Detection of Chronic heart failure from heart Sounds<br>
+                        Description:
+                        <ul>
+                            <li>
+                                Developed using ML/DL models to detect chronic heart failure from heart sounds.
+                            </li>
+                            <li>
+                                Built a Python-based GUI with Tkinter for user interaction.
+                            </li>
+                            <li>
+                                Integrated Random Forest and binary classifier models.
+                            </li>
+                        </ul>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
